@@ -1,0 +1,77 @@
+/*Contiene ancora molte imperfezioni, giornalmente ci do un'occhiata e miglioro*/
+
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center; /*Così quando ridimensiono la finestra l'immagine rimane centrata*/
+  width: 100vw;
+  height: 100vh;
+  font-family: "Outfit";     /*Richiamare il font da utilizzare*/
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  position: relative;       /*Per riuscire a piazzare il .container centrale*/
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0.5);   /* Alpha per la trasparenza*/
+  border-radius: 3%;   /* Angoli smussati*/
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header{
+  color: Lime;
+  text-align: center;
+  line-height: 5px; /*Per modificare la vicinanza di h1 alla barra nav*/
+}
+
+#logo{
+  width: 40%;
+}
+
+nav{
+  background-color: lime;
+  text-align: center;
+  padding: 1%;      /*Dare un po' di "corpo" alla barra di nav*/
+}
+
+section{
+  color: white;
+  padding-top: 5%;
+  line-height: 10%;
+}
+
+span{
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block; /*Al posto di metterlo in ogni id, lo metto qua così influenzerà tutte le barre di carica*/
+}
+
+span + p:before{
+  content: "\21A6";
+}
+
+#medio{
+  background-color: orange;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#carico{
+  background-color: lime;
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#scarico{
+  background-color: OrangeRed;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
